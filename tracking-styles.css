@@ -1,0 +1,130 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 80px;
+}
+body {
+    letter-spacing: 0.8px;
+    background-color: rgb(250, 232, 232);
+}
+
+.container-fluid {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none !important;
+    color: #651FFF !important;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.small {
+    font-size: 12px !important;
+    letter-spacing: 0.5px !important;
+}
+
+.Today {
+    color: rgb(83, 83, 83);
+}
+
+.btn-outline-primary {
+    background-color: #fff !important;
+    color: #4bb8a9 !important;
+    border: 1.3px solid #4bb8a9;
+    font-size: 12px;
+    border-radius: 0.4em !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4bb8a9 !important;
+    color: #fff !important;
+    border: 1.3px solid #4bb8a9;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #42A5F5 !important;
+}
+
+.progressbar {
+    display: flex;
+    overflow: hidden;
+    color: #455A64;
+    padding-left: 0px;
+    justify-content: center;
+}
+.progressbar img{
+    height: 100%;
+    width: 80%;
+}
+.card {
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 2px 4px 15px 0px black;
+    z-index: 0;
+}
+small
+{
+    font-size: 12px !important;
+}
+
+.a {
+    justify-content: space-between !important;
+}
+
+.border-line {
+    border-right: 1px solid rgb(226, 206, 226)
+}
+
+.card-footer img {
+    opacity: 0.3;
+}
+
+.card-footer h5 {
+    font-size: 1.1em;
+    color: #8C9EFF;
+    cursor: pointer;
+}
+.tracking{
+    height: 350px;
+}

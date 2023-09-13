@@ -1,0 +1,482 @@
+/* Reset some default styles ~A.D.K.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.top img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Basic styling for the navigation bar ~A.D.K.*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbeeee;
+    margin: 0;
+}
+
+.navbar {
+    /* position: fixed; ~A.D.K.*/
+    top: 0px;
+    width: 100%;
+    background-color: #274c77;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #6096ba;
+}
+
+/* Style for the logo container ~A.D.K.*/
+.logo-container {
+    float: left;
+    margin: 5px 5px 0 20px;
+    display: inline;
+}
+
+/* Style for the logo image ~A.D.K.*/
+.logo img {
+    height: 20px;
+    width: 15px;
+    vertical-align: middle;
+}
+
+/* Style for the logo text ~A.D.K.*/
+.logo h3 {
+    display: inline;
+    color: white;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+    /* Adjust the margin as needed ~A.D.K.*/
+}
+
+/* Style for the search bar and button ~A.D.K.*/
+.search-container {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 100px;
+    font-size: 14px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style for the login button ~A.D.K.*/
+.login-button {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+/* Ensure all items are in one line ~A.D.K.*/
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation-bar {
+    height: 100px;
+    width: 100%;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.main-two,
+.main-three {
+    margin-top: 15px;
+}
+
+.main-three {
+    padding: 0px 0px 0px 0px;
+}
+
+/* Style category section ~A.D.K.*/
+.categories {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Style for each category ~A.D.K.*/
+.category-heading {
+    width: 100%;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+.category {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    height: 300px;
+}
+
+/* Style for category images ~A.D.K.*/
+.category img {
+    margin-top: 70px;
+    max-width: 90%;
+}
+
+/* Style for category headings ~A.D.K.*/
+.category h2 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: "Berkshire Swash";
+}
+
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .categories {
+        grid-template-columns: 1fr;
+    }
+}
+
+.one {
+    background-color: #fa8383;
+}
+
+.two {
+    background-color: #f3cd97;
+}
+
+.three {
+    background-color: #95e0d2;
+}
+
+.four {
+    background-color: #c3ead5;
+}
+
+.three>img {
+    margin-top: 90px;
+}
+
+.four img {
+    margin-top: 80px;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+/* Style product section ~A.D.K.*/
+.product {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.main-product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* .product h3
+{
+    
+} */
+.product .price {
+    margin: 10px 10px 10px 10px;
+}
+
+.sign {
+    position: fixed;
+    height: 20px;
+    width: 50px;
+    color: black;
+    top: 55px;
+    left: 20px;
+    opacity: 0;
+}
+
+.price button {
+    display: inline-block;
+    background-color: #ddd;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.price h5{
+    font-weight: bolder;
+}
+.price button:hover {
+    background-color: #9e9999;
+}
+
+@media (max-width: 1000px) {
+    .main-product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 680px) {
+    .main-product {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.blog {
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.blog h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.navigation-bar {
+    height: 100px;
+    width: 100%;
+}
+
+/* Blog container styling ~A.D.K.*/
+.blog-container {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Image styling ~A.D.K.*/
+.blog-image {
+    float: left;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+/* Paragraph styling ~A.D.K.*/
+.blog-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+.blog-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+    text-align: center;
+}
+
+.read-more {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+@media (max-width: 680px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.read-more {
+    text-decoration: none;
+}
+
+
+/* Basic styling for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* Style the button that will trigger the dropdown */
+.dropdown-button {
+    background-color: #274c77;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the individual dropdown items */
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown items on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown when hovering over the button */
+.dropdown:hover .dropdown-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10,1fr);
+    position: fixed;
+    /* border-radius: 20px; */
+}
+/* .dropdown:hover .dropdown-content a{
+    /* border-radius: 50px; 
+} */
+.dropdown:hover {
+    background-color: #ddd;
+}
+.dropdown-button-login {
+    background-color: #274c77;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+}
+.dropdown-login:hover .dropdown-content-login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    position: fixed;
+    background-color: #fffcfc;
+    /* border-radius: 20px; */
+}
+.dropdown-content-login {
+    display: none;
+    position: relative;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content-login a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content-login a:hover {
+    background-color: #ddd;
+}
+.form-button a{
+    text-decoration: none;
+}
