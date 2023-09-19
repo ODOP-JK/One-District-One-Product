@@ -113,3 +113,23 @@ footer {
 .district-img{
     width: 100%;
 }
+.product .price {
+    margin: 10px 10px 10px 10px;
+}
+
+.price button {
+    background-color: #ddd;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.price button:hover {
+    background-color: #9e9999;
+}
+
