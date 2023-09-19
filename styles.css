@@ -38,6 +38,7 @@ body {
     background-color: #274c77;
     overflow: hidden;
     font-size: 17px;
+    flex-wrap: wrap;
 }
 
 .navbar a {
